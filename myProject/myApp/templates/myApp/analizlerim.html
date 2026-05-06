@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+    <h1 class="fw-bold mb-4"><i class="fas fa-chart-line text-primary me-2"></i>Analizlerim</h1>
+    <h3 class="mb-4">Merhaba, {{user.username}} ! Bu sayfada seçtiğin hedeflerinle ilgili analizleri bulabilirsin.</h3>
+
+    {% if secilen_hedefler %}
+        <div class="row">
+            {% for s_hedef in secilen_hedefler %}
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">{{ s_hedef.hedef.baslik }}</h5>
+                        <p class="text-muted small mb-3">{{ s_hedef.hedef.aciklama }}</p>
+                        <p class="mb-4">Buraya AI tarafından analiz edilmiş notlar gelecek. Örneğin: "Bugün hedefinle ilgili harika bir ilerleme kaydettin! Devam et!"</p>
+                        <a href="{% url 'hedeflerim' %}" class="btn btn-primary w-100 shadow-sm">
+                            <i class="fas fa-edit me-2"></i>Notlarını Güncelle ve Analiz Al
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info text-center" role="alert">
+            Henüz analiz edilecek bir hedefin yok. Lütfen <a href="{% url 'hedef_sec' %}" class="alert-link">hedef seç</a> ve ilerleyişini kaydetmeye başla!
+        </div>
+    {% endif %}
+    {% else %}
+        <div class="alert alert-info text-center" role="alert">
+            Analizlerinizi görmek için lütfen <a href="{% url 'login' %}" class="alert-link">giriş yapın</a> veya <a href="{% url 'register' %}" class="alert-link">kayıt olun</a>.
+        </div>
+    {% endif %}
+{% endblock %}

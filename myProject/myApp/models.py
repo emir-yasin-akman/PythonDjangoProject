@@ -32,7 +32,8 @@ class HedefNot(models.Model):
     not_metni = models.TextField()
     duygu_skoru = models.FloatField(null=True, blank=True) # BURAYI AI DOLDURACAK
     ai_motivasyon_notu = models.TextField(null=True, blank=True) # BURAYI AI DOLDURACAK
-
+    tarih = models.DateTimeField(auto_now_add=True) # Ai motivasyon notunu duygu skoru ve devamlılığa bakarak ürettiğimiz için tarih eklendi.
+    
     def __str__(self):
         return f"{self.user.username} - {self.secilen_hedef} için not"
     

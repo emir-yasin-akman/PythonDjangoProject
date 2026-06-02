@@ -123,9 +123,6 @@ def not_ekle(request):
                     groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
  
                     # AI'ya sadece duygu skorunu ve devamlılığı veriyoruz (notun içeriğini gizliyoruz)
-<<<<<<< HEAD
-                    prompt = f"""Sen samimi ve sıcak bir yaşam koçusun. Kullanıcıya kısa bir motivasyon mesajı yaz.
-=======
                     #prompt = f"""Sen samimi ve sıcak bir yaşam koçusun. Kullanıcıya kısa bir motivasyon mesajı yaz.
 #
                     #Bilgiler:
@@ -164,25 +161,16 @@ def not_ekle(request):
                     #- Türkçe yaz. Sadece mesajı yaz, tırnak işareti ekleme."""
 
                     prompt = f"""Sen disiplinli, taviz vermeyen ve bahaneleri asla kabul etmeyen sert bir antrenörsün.
->>>>>>> ozellik/ai-augmentation
 
                     Bilgiler:
                     - Bugünkü başarı skoru: {final_skor}/5
                     - Bu hafta kaç gün devam etti: {haftalik_gun_sayisi} gün
 
                     Kurallar:
-<<<<<<< HEAD
-                    - Skoru veya gün sayısını mesajda DOĞRUDAN tekrar etme
-                    - Samimi ve insan gibi konuş, robot gibi değil
-                    - Maksimum 10 kelime
-                    - Türkçe yaz
-                    - Sadece mesajı yaz, tırnak işareti veya açıklama ekleme"""
-=======
                     - Skoru veya gün sayısını mesajda doğrudan tekrar etme.
                     - Sert, net ve disiplinli bir dille uyar veya tebrik et. Acıma yok!
                     - Maksimum 12 kelime.
                     - Türkçe yaz. Sadece mesajı yaz, tırnak işareti ekleme."""
->>>>>>> ozellik/ai-augmentation
 
                     completion = groq_client.chat.completions.create(
                         model="llama-3.3-70b-versatile",
@@ -217,11 +205,7 @@ def not_ekle(request):
             messages.error(request, 'Lütfen not alanını boş bırakmayın.')
  
     kullanicinin_hedefleri = SecilenHedef.objects.filter(user=request.user)
-<<<<<<< HEAD
-    return render(request, 'hedeflerim.html', {'secilen_hedefler': kullanicinin_hedefleri})
-=======
     return render(request, 'myApp/hedeflerim.html', {'secilen_hedefler': kullanicinin_hedefleri})
->>>>>>> ozellik/ai-augmentation
  
 def analizlerim(request):
     secilen_hedefler = []

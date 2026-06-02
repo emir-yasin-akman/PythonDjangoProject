@@ -99,6 +99,29 @@ data = [
     ("Yarım kaldı ama hiç olmamasından iyidir.", 1),
     ("Bugün sadece 20 dakika spor yapabildim.", 1),
     ("Uyku düzenimi toparlamaya çalışıyorum.", 1),
+<<<<<<< HEAD
+=======
+    ("Çalışma masamı düzenli tutmak kafamı çok rahatlattı.", 1),
+    ("Bugün gitar pratiğimi hiç aksatmadan yarım saat yaptım.", 1),
+    ("Ailemi arayıp hal hatır sorma hedefimi gerçekleştirdim.", 1),
+    ("Dışarıdan söylemek yerine kendi yemeğimi kendim pişirdim.", 1),
+    ("Gün boyu dik oturma egzersizlerine dikkat ettim, sırtım daha az ağrıyor.", 1),
+    ("Cilt bakım rutinimi eksiksiz uygulayarak güne başladım.", 1),
+    ("Harcamalarımı kuruşu kuruşuna bütçe defterime işledim.", 1),
+    ("Çiçeklerimin bakımını ve sulamasını bugün aksatmadım.", 1),
+    ("Yolda müzik dinlemek yerine eğitici bir podcast bitirdim.", 1),
+    ("Şükran günlüğüme bugün beni mutlu eden üç şeyi yazdım.", 1),
+    ("Gereksiz alışveriş yapmama kuralıma bugün tam uydum.", 1),
+    ("Evi havalandırıp toplamak enerjimi anında değiştirdi.", 1),
+    ("Yeni tarif deneme hedefimi bugün başardım, çok da lezzetli oldu.", 1),
+    ("Arkadaşlarımla kaliteli vakit geçirmek bana çok iyi geldi.", 1),
+    ("Güneş kremi sürme alışkanlığını nihayet oturttum.", 1),
+    ("Evcil hayvanımla bugün ekstra ilgilendim, bağımız güçleniyor.", 1),
+    ("Bugün hiç şikayet etmeme orucumu başarıyla tamamladım.", 1),
+    ("Dolabımı düzenlemek zihnimdeki karmaşayı da temizledi.", 1),
+    ("Maaşımın bir kısmını anında birikim hesabına aktardım.", 1),
+    ("İnsanlara daha fazla teşekkür etme hedefime bugün uydum.", 1),
+>>>>>>> ozellik/ai-augmentation
 
     # --- NEGATİF NOTLAR (0) ---
     ("Bugün hiçbir şey yapmak istemedim.", 0),
@@ -219,6 +242,29 @@ data = [
     ("Bugün verimli olamadım, çok az şey yapabildim.", 0),
     ("Para biriktirmek düşündüğümden zor.", 0),
     ("Biraz daha dikkatli olmam lazım.", 0),
+<<<<<<< HEAD
+=======
+    ("Odam o kadar dağınık ki adım atacak yer yok, toplamaya üşeniyorum.", 0),
+    ("Çizim yapmaya heveslenmiştim ama kalemi elime bile almadım.", 0),
+    ("Bugün buluşma planını son anda iptal ettim, hiç sosyalleşesim yok.", 0),
+    ("Yemek yapmaya üşendiğim için yine dışarıdan sipariş verdim.", 0),
+    ("Bilgisayar başında yine iki büklüm oturdum, boynum tutuldu.", 0),
+    ("Diş ipi kullanma alışkanlığını bir türlü oturtamıyorum.", 0),
+    ("Bütçe takibini unuttum, paramın nereye gittiğini bilmiyorum.", 0),
+    ("Köpeği yürüyüşe çıkarmaya çok üşendim, kısa kestik.", 0),
+    ("Trafikte yine çok sinirlendim, sakin kalma hedefim çöp oldu.", 0),
+    ("Bugün her şeye şikayet ettim, pozitif hiçbir şey bulamıyorum.", 0),
+    ("Kredi kartı limitimi gereksiz yere yine zorladım.", 0),
+    ("Hobilerime vakit ayırmak yerine boş boş tavana baktım.", 0),
+    ("Bitkilerim kurumaya başlamış ama onlarla ilgilenecek halim yok.", 0),
+    ("Günün çoğunu yatarak geçirdim, sırtım ağrıyor.", 0),
+    ("Bulaşıkları yine tezgaha yığdım.", 0),
+    ("Bugün kimseyle konuşmak istemedim, kendimi tamamen kapattım.", 0),
+    ("Kişisel bakımıma bugün hiç özen göstermedim.", 0),
+    ("Plansız harcamalarım yüzünden canım çok sıkkın.", 0),
+    ("Biriyle tartışırken yine sesimi yükselttim.", 0),
+    ("Eski kötü alışkanlıklarıma bugün maalesef geri döndüm.", 0),
+>>>>>>> ozellik/ai-augmentation
 
     # --- NÖTR / KARMAŞIK NOTLAR (Dağıtılmış) ---
     ("Bugün bazı hedefleri yaptım bazılarını yapamadım.", 2),
@@ -234,5 +280,31 @@ data = [
     ("İstatistik kısmını seviyorum ama çok bakmıyorum.", 2),
     ("Bazı günler motive oluyorum bazı günler olmuyorum.", 2),
     ("Bugün tam istediğim gibi geçmedi ama kötü de değildi.", 2),
+<<<<<<< HEAD
     ("fena değil", 2)
+=======
+    ("fena değil", 2),
+    ("Masamı biraz toparladım ama hala tam istediğim gibi düzenli değil.", 2),
+    ("Piyanonun başına oturdum ama sadece beş dakika çalıp kalktım.", 2),
+    ("Biriyle konuştum ama çok kısa ve mecburi bir sohbetti.", 2),
+    ("Yemek yaptım ama çok basit bir şeydi, pek özenmedim.", 2),
+    ("Bazen dik oturmayı hatırlıyorum ama genelde yine kamburum çıkıyor.", 2),
+    ("Yüzümü yıkadım ama kremlerimi sürmeyi unuttum.", 2),
+    ("Harcamaların bir kısmını yazdım, gerisi aklımda değil.", 2),
+    ("Bitkilere biraz su verdim ama topraklarını değiştirmeyi yine erteledim.", 2),
+    ("Yolda podcast açtım ama aklım başka yerdeydi, pek dinleyemedim.", 2),
+    ("Günlüğe bir şeyler karaladım ama çok yüzeyseldi.", 2),
+    ("Para harcamadım ama köşeye para da atamadım.", 2),
+    ("Hobimle ilgilendim ama bugün pek keyif vermedi.", 2),
+    ("Ortalığı şöyle bir süpürdüm ama dip köşe temizlik şart.", 2),
+    ("Dışarı çıktım ama hava almak yerine sadece markete gidip döndüm.", 2),
+    ("Kendimi biraz daha iyi hissediyorum ama tam bir rahatlama yok.", 2),
+    ("Dişlerimi fırçaladım ama sadece 30 saniye falan sürdü.", 2),
+    ("Bugün kimseyle ne iyi ne kötü bir iletişimim oldu.", 2),
+    ("Kahvaltı hazırladım ama yerken çok hızlı tükettim.", 2),
+    ("Evcil hayvanımı sevdim ama oyun oynamaya vaktim olmadı.", 2),
+    ("Durumum ne ileriye gidiyor ne geriye, sabit kaldım.", 2)
+
+
+>>>>>>> ozellik/ai-augmentation
 ]

@@ -1,0 +1,9 @@
+# Gizli API Anahtarı (En önemlisi)
+.env
+
+# Python'un çalışma sırasında oluşturduğu gereksiz dosyalar
+__pycache__/
+*.pyc
+
+# Sanal ortam klasörü (Kütüphanelerin olduğu yer)
+venv/

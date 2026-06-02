@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Proje Tanıtım Bölümü -->
+<div class="row mb-5 mt-4 text-center">
+    <div class="col-12">
+        <h2 class="fw-bold text-dark">Nasıl Çalışır?</h2>
+        <p class="text-muted">Yapay zeka destekli gelişim yolculuğun sadece 3 adımda başlar.</p>
+    </div>
+    
+    <!-- Adım 1 -->
+    <div class="col-md-4 mt-4">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-top border-primary border-4">
+            <div class="mb-3">
+                <i class="fas fa-bullseye fa-3x text-primary"></i>
+            </div>
+            <h5 class="fw-bold">1. Hedefini Belirle</h5>
+            <p class="text-muted small">İngilizce, spor veya bırakmak istediğin bir alışkanlık... Sana uygun olanı seç.</p>
+        </div>
+    </div>
+
+    <!-- Adım 2 -->
+    <div class="col-md-4 mt-4">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-top border-success border-4">
+            <div class="mb-3">
+                <i class="fas fa-pen-fancy fa-3x text-success"></i>
+            </div>
+            <h5 class="fw-bold">2. Günlük Notlarını Tut</h5>
+            <p class="text-muted small">Günün nasıl geçtiğini ve neler yaptığını yaz. Detaylar gelişimini besler.</p>
+        </div>
+    </div>
+
+    <!-- Adım 3 -->
+    <div class="col-md-4 mt-4">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-top border-info border-4">
+            <div class="mb-3">
+                <i class="fas fa-brain fa-3x text-info"></i>
+            </div>
+            <h5 class="fw-bold">3. AI Analizini Gör</h5>
+            <p class="text-muted small">Yapay zekamız notlarını analiz etsin, sana özel motivasyon ve tavsiye üretsin.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

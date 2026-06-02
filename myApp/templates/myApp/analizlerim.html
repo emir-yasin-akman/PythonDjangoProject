@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+    <h1 class="fw-bold mb-4"><i class="fas fa-chart-line text-primary me-2"></i>Analizlerim</h1>
+    <h3 class="mb-4">Merhaba, {{user.username}} ! Bu sayfada seçtiğin hedeflerinle ilgili analizleri bulabilirsin.</h3>
+
+    {% if secilen_hedefler %}
+        <div class="row">
+            {% for s_hedef in secilen_hedefler %}
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm border-0 h-100">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">{{ s_hedef.hedef.baslik }}</h5>
+                        <p class="text-muted small mb-3">{{ s_hedef.hedef.aciklama }}</p>
+                        
+                        <div class="ai-koc-mesaji p-3 mb-4 rounded" style="background-color: #f0f7ff; border-left: 5px solid #0d6efd;">
+                            <h6 class="fw-bold small text-primary"><i class="fas fa-robot me-2"></i>AI Koçunun Notu:</h6>
+                            <p class="mb-0 fst-italic">
+                                {% with last_note=s_hedef.hedefnot_set.last %}
+                                    {% if last_note.ai_motivasyon_notu %}
+                                        "{{ last_note.ai_motivasyon_notu }}"
+                                    {% else %}
+                                        Henüz bir analiz üretilmedi. İlk notunu eklediğinde koçun burada görünecek! ✨
+                                    {% endif %}
+                                {% endwith %}
+                            </p>
+                        </div>
+                        
+                        <hr>
+                        <div class="duygu-skorlari-alani">
+                            <h6 class="fw-bold small text-primary mb-3">Hesaplanan Enerji Skorları:</h6>
+    
+                            {% for not in s_hedef.hedefnot_set.all %}
+                                <div class="mb-3 p-3 border rounded bg-white shadow-sm">
+                                    <div class="small text-dark mb-2" style="line-height: 1.5; word-wrap: break-word;">
+                                         <i class="fas fa-quote-left text-muted me-2 small"></i>
+                                         {{ not.not_metni }}
+                                    </div>
+            
+                                    <div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">
+                                        <span class="text-muted" style="font-size: 0.7rem;">AI Analizi</span>
+                
+                                        <span class="badge shadow-sm py-1 px-2 {% if not.duygu_skoru >= 3.5 %}bg-success{% elif not.duygu_skoru >= 2.5 %}bg-warning text-dark{% else %}bg-danger{% endif %}">
+                     <i class="fas fa-bolt me-1"></i>Skor: {{ not.duygu_skoru|default:"-" }}/5
+                                        </span>
+                                    </div>
+                                </div>
+                            {% empty %}
+                                <p class="text-muted small italic text-center">Henüz kaydedilmiş bir skor bulunmuyor.</p>
+                            {% endfor %}
+                        </div>
+
+                        <a href="{% url 'hedeflerim' %}" class="btn btn-primary w-100 shadow-sm mt-3">
+                            <i class="fas fa-edit me-2"></i>Notlarını Güncelle ve Analiz Al
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info text-center" role="alert">
+            Henüz analiz edilecek bir hedefin yok. Lütfen <a href="{% url 'hedef_sec' %}" class="alert-link">hedef seç</a> ve ilerleyişini kaydetmeye başla!
+        </div>
+    {% endif %}
+    {% else %}
+        <div class="alert alert-info text-center" role="alert">
+            Analizlerinizi görmek için lütfen <a href="{% url 'login' %}" class="alert-link">giriş yapın</a> veya <a href="{% url 'register' %}" class="alert-link">kayıt olun</a>.
+        </div>
+    {% endif %}
+{% endblock %}

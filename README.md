@@ -2,12 +2,12 @@
 ## Kurulum
 1. Repoyu klonlayın
 
-2. .env.example dosyasını kopyalayıp .env olarak yeniden adlandırın
+2. .env.example dosyasını .env olarak yeniden adlandırın
 
 3. .env dosyasını açın ve kendi API key'inizi yazın:
    GROQ_API_KEY=buraya_kendi_key_inizi_yazın
 
-   ÖNEMLİ NOT : Eğer bu alanı uygulamazsanız proje sorunsuz olarak çalışır ancak yapay zeka sistemi bizim eğittiğimiz şekilde mesajlar vermek yerine otomatik ayarladığımız mesajları gönderir o yüzden bu alan çok kritiktir.
+   ÖNEMLİ NOT : Eğer bu alanı uygulamazsanız proje sorunsuz olarak çalışır ancak yapay zeka sistemi bizim eğittiğimiz şekilde mesajlar vermek yerine otomatik ayarladığımız mesajları gönderir o yüzden bu alan çok kritiktir. API keyi nasıl alacağınız bir sonraki adımda detaylıca anlatılmıştır.
    
 5. Groq API key almak için:
    - https://console.groq.com adresine gidin

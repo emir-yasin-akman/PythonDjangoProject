@@ -15,7 +15,7 @@
    - API Keys menüsünden yeni key oluşturun
    - Oluşturulan key'i .env dosyasına yapıştırın
 
-6. Gerekli olan kütüphaneleri kurun:
+6. Gerekli olan kütüphaneleri kurun (Tavsiye Edilen : Bir sonraki adımda sanal ortam içerisinde kurulum yapmanız daha sağlıklıdır.):
    - pip install django
    - pip install joblib
    - pip install groq
@@ -30,7 +30,7 @@
    - Onay mesajınız geldikten sonra gerekli olan tüm kütüphaneleri kurdunuz demektir.
    
 8. Sunucuyu başlatın:
-   - Öncelikle "cd myProject" komutu ile Proje dosyasının içine girin.
+   - Öncelikle myProject klasörü içindeyken "manage.py" dosyasıyla aynı dizinde olduğunuza emin olun.
    - Ardından "python manage.py runserver" komutu ile sistemi çalıştırın.
    - Onay mesajları geldikten sonra verilen linkten web adresine gidin.
    - Proje çalıştırıldı.

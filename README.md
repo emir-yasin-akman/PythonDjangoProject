@@ -14,7 +14,7 @@
 
 7. Ardından gerekli kütüphaneleri kurmak için `pip install -r requirements.txt` komutunu çalıştırın. Bu komut sayesinde projenin gerektirdiği tüm kütüphaneler sanal ortamınızın içerisine kurulacaktır.
 
-8. `.env.example` dosyasını `.env` olarak yeniden adlandırın.
+8. Ardından CMD terminalini kapatmadan `.env.example` dosyasını `.env` olarak yeniden adlandırın.
 
 9. `.env` dosyasını açın ve kendi API key'inizi yazın:
 
